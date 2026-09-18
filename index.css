@@ -29,6 +29,11 @@ main ul {
     width: 60vw;
     border-radius: 20px;
     border-style: groove;
+    background-image: url(batman-01-logo-png-transparent.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-attachment: fixed;
 }
 main {
     align-self: center;
@@ -49,8 +54,17 @@ main p {
     font-size: 30px;
 }
 button {
-    width: 150px;
-    height: 60px;
+    width: 250px;
+    height: 90px;
     border-radius: 10px;
     margin-bottom:10px;
+    transition: 2s;
+    clip-path: polygon(
+        50% 25%, 53% 13%, 57% 25%, 67% 23%, 78% 13%, 82% 23%, 94% 15%, 100% 35%, 
+    93% 53%, 82% 63%, 68% 70%, 55% 75%, 50% 93%, 45% 75%, 32% 70%, 18% 63%, 
+    7% 53%, 0% 35%, 6% 15%, 18% 23%, 22% 13%, 33% 23%, 43% 25%, 47% 13%
+    ) ;
+}
+button:hover {
+    transform: scale(1.1);
 }
